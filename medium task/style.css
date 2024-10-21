@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: linear-gradient(to bottom right, #4A90E2, #50E3C2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#fromText,
+#toText {
+    flex: 1;
+    min-width: 250px;
+    height: 200px;
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.selectArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #002B36;
+    margin-top: 25px;
+    padding: 10px 0;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.select1,
+.select2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.select1 {
+    border-right: 2px solid #007EA7;
+}
+
+.select2 {
+    border-left: 2px solid #007EA7;
+}
+
+#fselect,
+#sselect {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #007EA7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#fselect:hover,
+#sselect:hover {
+    background-color: #005f82;
+}
+
+#transfer {
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    background-color: #007EA7;
+    color: white;
+    font-size: 18px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#transfer:hover {
+    background-color: #005f82;
+}
+
+.speaker,
+.copy {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.speaker:hover,
+.copy:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .Text {
+        flex-direction: column;
+    }
+
+    #fromText,
+    #toText {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .select1,
+    .select2 {
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+        border: none;
+    }
+
+    .select1 {
+        border-right: none;
+    }
+
+    .select2 {
+        border-left: none;
+    }
+
+    #transfer {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
